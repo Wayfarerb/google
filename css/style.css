@@ -1,0 +1,206 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ 
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+ 
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+ 
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+ 
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+ 
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+ 
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+ 
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+ 
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+ 
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    min-width: 980px;
+    flex: 0 0 auto;
+   
+}
+
+header ul {
+     display:flex;
+}
+
+header li {
+        list-style: none;
+}
+
+header a {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+
+header a:hover {
+    text-decoration: underline;
+    color: #000077;
+}
+
+header .btn {
+    background-color: rgb(94, 173, 246);
+    color:white;
+    font-weight: bold;
+    margin-right: 20px;
+    border-radius: 2px;
+}
+
+header .btn:hover {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 auto;
+    
+}
+
+main .logo {
+    padding-top: 190px;
+}
+
+.search input {
+    border-radius: 24px;
+    height: 40px;
+    margin-top: 30px;
+    border: 1px solid rgb(230, 224, 224);
+}
+
+.search-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 18px;
+}
+
+input[type="submit"] {
+    background: #f2f2f2;
+    margin: 11px 4px;
+    padding: 0px 16px;
+    border-radius: 4px;
+    color:#5f6368;
+    border: 1px solid #f2f2f2;
+    height: 36px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
+}
+
+footer {
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: space-between;
+    background: #f2f2f2;
+    line-height: 40px;
+    min-width: 980px;
+    border-top: 1px solid #e4e4e4;
+    margin: 0 0 0 -27px;
+    
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.left-footer a,.right-footer a {
+    display:inline-block;
+    text-decoration: none;
+    color: #5f6368;
+    padding: 0 0 0 27px;
+    font-size: 14px;
+}
+
+.right-footer {
+    margin-right: 27px;
+}
+.left-footer a:hover,.right-footer a:hover {
+text-decoration: underline;
+}
